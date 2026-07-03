@@ -7,6 +7,7 @@ import Button from '../ui/Button'
 import BrandDivider from '../brand/BrandDivider'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 import { contato } from '@/lib/data'
+import { basePath } from '@/lib/basePath'
 
 export default function CTAFinal() {
   const whatsappUrl = `https://wa.me/${contato.whatsapp}?text=${encodeURIComponent(
@@ -16,7 +17,7 @@ export default function CTAFinal() {
   return (
     <section className="relative px-6 overflow-hidden flex items-center justify-center" style={{ minHeight: '520px' }}>
       <Image
-        src="/images/cta-background.png"
+        src={`${basePath}/images/cta-background.png`}
         alt=""
         fill
         className="object-cover object-right"

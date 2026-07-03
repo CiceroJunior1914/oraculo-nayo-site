@@ -7,6 +7,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import BrandDivider from '@/components/brand/BrandDivider'
 import BrandSymbol from '@/components/brand/BrandSymbol'
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer } from '@/lib/animations'
+import { basePath } from '@/lib/basePath'
 
 export default function Sobre() {
   return (
@@ -48,7 +49,7 @@ export default function Sobre() {
             className="relative aspect-[3/4] overflow-hidden shadow-warm-md"
           >
             <Image
-              src="/identidade-visual/nayo.jpeg"
+              src={`${basePath}/identidade-visual/nayo.jpeg`}
               alt="Nayô — Taróloga e facilitadora de autoconhecimento"
               fill
               className="object-cover object-top"

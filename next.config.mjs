@@ -10,6 +10,9 @@ const nextConfig = {
   basePath: isGithubPages ? `/${repoName}` : '',
   assetPrefix: isGithubPages ? `/${repoName}/` : '',
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : '',
+  },
 }
 
 export default nextConfig

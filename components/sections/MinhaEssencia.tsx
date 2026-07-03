@@ -6,6 +6,7 @@ import Button from '../ui/Button'
 import SectionLabel from '../ui/SectionLabel'
 import BrandDivider from '../brand/BrandDivider'
 import { fadeInUp, slideInLeft, staggerContainer } from '@/lib/animations'
+import { basePath } from '@/lib/basePath'
 
 export default function MinhaEssencia() {
   return (
@@ -20,7 +21,7 @@ export default function MinhaEssencia() {
           className="relative aspect-[3/4] overflow-hidden shadow-warm-md"
         >
           <Image
-            src="/identidade-visual/nayo.jpeg"
+            src={`${basePath}/identidade-visual/nayo.jpeg`}
             alt="Nayô — Taróloga e facilitadora de autoconhecimento"
             fill
             className="object-cover object-top"
